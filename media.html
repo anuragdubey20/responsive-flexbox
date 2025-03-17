@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flexbox Boxes</title>
+    <style>
+        /* Centered company name */
+        .company-name {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px; /* Space between company name and boxes */
+        }
+
+        /* Container for the boxes */
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 10px; /* Reduced the gap between boxes */
+            padding: 10px;
+        }
+
+        /* Style for each box */
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            color: white;
+            border-radius: 8px;
+        }
+
+        /* Media query for compressed screen */
+        @media screen and (max-width: 600px) {
+            .container {
+                flex-direction: column; /* Change layout to column */
+                align-items: center; /* Center boxes horizontally */
+            }
+
+            .box {
+                width: 80%; /* Make the boxes wider on small screens */
+                background-color: lightcoral; /* Change color on compression */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="company-name">Axenture</div> <!-- Company name -->
+    <div class="container">
+        <div class="box">Employe 1</div>
+        <div class="box">Employe 2</div>
+        <div class="box">Employe 3</div>
+        <div class="box">Employe 4</div>
+    </div>
+</body>
+</html>
