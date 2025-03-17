@@ -5,23 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Flexbox Boxes</title>
     <style>
-        /* Centered company name */
+       
         .company-name {
             text-align: center;
             font-size: 24px;
             font-weight: bold;
-            margin-bottom: 20px; /* Space between company name and boxes */
+            margin-bottom: 20px; 
         }
 
-        /* Container for the boxes */
+        
         .container {
             display: flex;
             justify-content: center;
-            gap: 10px; /* Reduced the gap between boxes */
+            gap: 10px;
             padding: 10px;
         }
 
-        /* Style for each box */
+       
         .box {
             width: 100px;
             height: 100px;
@@ -34,22 +34,22 @@
             border-radius: 8px;
         }
 
-        /* Media query for compressed screen */
+        
         @media screen and (max-width: 600px) {
             .container {
-                flex-direction: column; /* Change layout to column */
-                align-items: center; /* Center boxes horizontally */
+                flex-direction: column; 
+                align-items: center; 
             }
 
             .box {
-                width: 80%; /* Make the boxes wider on small screens */
-                background-color: lightcoral; /* Change color on compression */
+                width: 80%; 
+                background-color: lightcoral;
             }
         }
     </style>
 </head>
 <body>
-    <div class="company-name">Axenture</div> <!-- Company name -->
+    <div class="company-name">Axenture</div> 
     <div class="container">
         <div class="box">Employe 1</div>
         <div class="box">Employe 2</div>
